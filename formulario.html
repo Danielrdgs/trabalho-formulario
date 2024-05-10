@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">preencha o formulário</p>
+        <br>
+        </div>
+    
+        <form> 
+        <fieldset class="grupo">
+            <div>
+                <label for="nome">Nome</label required>
+                <input type="text" name="nome" id="nome">
+            </div>
+    
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+    
+        <div class="campo">
+            <label for="email">Email</label required>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="campo">
+            <label>Senha</label required>
+            <input type="password" name="senha" id="senha">
+        </div>
+    
+        <div class="campo">
+            <label>Qual o seu gênero?</label required>
+            <label>
+                <input type="radio" name="devweb" id="masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="prefironaodizer">Prefiro não dizer
+            </label>
+        </div>
+    
+        <div>
+            <label for="cor">Sua cor</label>
+            <select id="cor">
+                <option selected disabled value="">Selecione</option>
+                <option>Amarelo</option>
+                <option>Branco</option>
+                <option>Pardo</option>
+                <option>Preto</option>
+            </select>
+            
+        </div>
+    
+    <fieldset class="grupo">
+        <div  class="campo">
+            <label>Selecione quais tecnologias você tem em casa:</label><br><br>
+            <input type="checkbox" name="celular" id="celular" value="celular">
+            <label for="celular">Celular</label>
+            <input type="checkbox" name="tablet" id="tablet" value="tablet">
+            <label for="tablet">Tablet</label>
+            <input type="checkbox" name="notebook" id="notebook" value="notebook">
+            <label for="notebook">Notebook</label>
+            <input type="checkbox" name="computador" id="computador" value="computador">
+            <label for="computador">Computador</label>
+            
+        </div>
+    </fieldset>
+    
+    <div class="campo">
+        <br>
+        <label>O que achou do formulário?</label required>
+        <textarea row="5" style="width: 26em" id="feedback" name="feedback"></textarea>
+    </div>
+    
+    <button type="submit">Concluir</button>
+    
+        </form>
+</body>
+</html>
